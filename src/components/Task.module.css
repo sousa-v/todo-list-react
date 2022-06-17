@@ -1,0 +1,104 @@
+.container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  height: 4.5rem;
+  padding: 1rem;
+
+  border-radius: .5rem;
+
+  background: var(--gray-500);
+  border: 1px solid var(--gray-400);
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.container li {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.task {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+
+  gap: 12px;
+  
+  color: var(--gray-100);
+}
+
+.completedTask {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+
+  gap: 12px;
+  
+  color: var(--gray-300);
+  text-decoration-line: line-through;
+}
+
+.buttonPendingTask {
+  background: transparent;
+  line-height: 0;
+  border: 0;
+
+  cursor: pointer;
+}
+
+.buttonPendingTask svg {
+  width: 16px;
+  color: var(--blue-dark);
+}
+
+.buttonPendingTask svg:hover {
+  color: var(--blue);
+}
+
+.buttonCompletedTask {
+  background: transparent;
+  line-height: 0;
+  border: 0;
+
+  cursor: pointer;
+}
+
+.buttonCompletedTask svg {
+  width: 16px;
+
+  border-radius: 50%;
+
+  background: var(--purple-dark);
+  border: 2px solid var(--purple-dark);
+  color: var(--gray-100);
+}
+
+.buttonCompletedTask svg:hover {
+  border: 2px solid var(--purple);
+  background: var(--purple);
+}
+
+
+
+.deleteTask  {
+  background: transparent;
+  border: 0;
+
+  cursor: pointer;
+}
+
+.deleteTask svg:hover {
+  border-radius: 4px;
+  background: var(--gray-400);
+  color: var(--danger)
+}
+
+.deleteTask svg {
+  width: 16px;
+  color: var(--gray-300);
+}
+
+li + li {
+  margin-top: 12px;
+}
